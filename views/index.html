@@ -1,51 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Socket.io chat</title>
+    <title>Evian</title>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0, user-scalable=0" name="viewport">
     <link rel="stylesheet" href="/public/css/header.css">
     <link rel="stylesheet" href="/public/css/content.css">
-    <link rel="stylesheet" href="/public/css/materialize.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body>
+<section id="left-content">
+  <img src="/public/logo.png" class="logo">
+  <a href="#" class="tap"><i class="fa fa-history fa-2x"></i></a>
+  <a href="#" class="tap"><i class="fa fa-users fa-2x"></i></a>
+  <a href="#" class="tap"><i class="fa fa-hashtag fa-2x"></i></a>
+</section>
 
-  <article id="left-content">
-    <header id="page-header-left">
-      <section class="wrapper"></section>
-    </header>
-    </article>
-
-    <article id="right-content">
-    <header id="page-header-right">
-    <section class="wrapper"><div id='messages'></div> <!-- fix id to chat area -->
-        <footer class="footer-copyright">
-        <div class="container">
-            <form id="main">
+<section id="right-content">
+  <header id="right-header">
+    <span class="intersted-in">#porn</span>
+  </header>
+    <div class="wrapper">
+      <div id="messages"></div>
+      <footer>
+        <div class="container" style="margin-left: 0px;">
+          <form id="main">
                 <input placeholder="Say Hi" id="content" type="text" autocomplete="off" >
-                <button class="btn">Send</button>
+                <button type="button" class="btn btn-default">Send</button> <!-- Send를 Stop으로 바꾼다 -->
             </form>
-          </div>
-        </footer>
-        </section>
-    </header>
-    </article>
+        </div>
+      </footer>
+    </div>  
+</section>
 
 <script src="/socket.io/socket.io.js">
     </script> 
-    <script src="//code.jquery.com/jquery-1.12.0.min.js">
-    </script> 
-    <script type="text/javascript">
-      var socket = io();
-      $('form').submit(function(){
-        socket.emit('chat message', $('#content').val());
-        $('#content').val('');
-        return false;
-      });
-
-      socket.on('chat message', function(msg){
-        $('#messages').append($('<li>').text(msg));
-      });
-    </script>
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="/public/js/chat.js"></script>
 </body>
 </html>

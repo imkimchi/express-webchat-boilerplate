@@ -1,56 +1,108 @@
 html, body {
 	margin: 0;
-	width: 100%;
+	height: 100%;
 }
 
 body {
 	position: relative;
-	height: 100%;
 	overflow-x: hidden;
 	overflow-y: auto;
 }
 
 #messages {
+	height: 100%;
 	overflow: auto;
-	height: 500px;
+}
+
+.logo {
+	width: 40%;
+	margin-top: 20px;
+	margin-left: 100px;
+	margin-right: 80px;
+	margin-bottom: 30px;
+}
+
+.tap {
+    display: inline-block;
+    float: left;
+    width: calc(100% / 3);
+    height: 45px;
+    color: #004D40;
+    text-align: center;
+    text-decoration: none;
+    line-height: 45px;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.tap:hover {
+	color: white;
 }
 
 footer {
+	padding-top: 30px;
+	positon: absolute;
 	bottom: 0;
+	margin-bottom: 30px;
 	width: 100%;
 	height: 60px;
-	positon: absolute;
-}
-
-.container {
-	margin: 0;
-}
-
-input {
+	position: fixed;
 	display: inline-block;
-	width: 110%;
-	float: left;
 }
 
+li{
+	list-style: none;
+   }
+
+
+.main {
+	display: inline-block;
+	margin-bottom: 100px;
+}
+
+input[type=text]{
+	width:70%;
+	height:34px;
+	position: relative;
+	padding:6px 12px;
+	font-size:14px;
+	line-height:1.42857143;
+	color:#555;
+	margin-right: 10px;
+	background-color:#fff;
+	border:1px solid #ccc;
+	border-radius:4px;
+	-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075);
+	box-shadow:inset 0 1px 1px rgba(0,0,0,.075);
+	-webkit-transition:border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;-o-transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s
+}
+
+.intersted-in {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 900;
+	font-size: 3em;
+}
 button {
-	margin-left: 50px;
-	position: absolute;
 	display: inline-block;
-	width: 20%;
+	position: relative;
 }
 
 #left-content {
 	height: 100%;
 	width: 30%;
-	float:left;
+	position: absolute;
+	left: 0;
+	background-color: #009688;
 }
+
 .wrapper {
 	padding-top: 60px;
+	height: 500px;
 }
 
 #right-content {
 	height: 100%;
 	width: 70%;
-	background-color: blue;
-	float:right;
+	position: absolute;
+	right: 0;
 }

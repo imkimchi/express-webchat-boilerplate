@@ -1,17 +1,7 @@
-#page-header-left {
-	position: fixed;
-	height: 50px;
-	width: 30%;
-	background-color:  #3F51B5;
-	z-index: 1000;
-	float: left;
-}
+@import url(https://fonts.googleapis.com/css?family=Raleway:900);
 
-#page-header-right {
+#right-header {
+	height: 60px;
 	position: fixed;
-	height: 50px;
-	width: 70%;
-	background-color: #2196F3;
-	z-index: 1000;
-	float:right;
+	padding-left: 30px;
 }
