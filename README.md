@@ -1,3 +1,5 @@
 # Evian
+### A web chat applicaton bulit with Node.js(socket.io) + mongoDB
 
-will be update soon
+
+It helps you connect users who share the same interests
