@@ -4,33 +4,40 @@
     <title>Evian</title>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0, user-scalable=0" name="viewport">
-    <link rel="stylesheet" href="/public/css/header.css">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.8/css/bootstrap-material-design.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.8/css/ripples.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/public/css/responsive.css">
     <link rel="stylesheet" href="/public/css/content.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/public/css/Material.css">
 </head>
 <body>
 <section id="left-content">
   <img src="/public/logo.png" class="logo" style="margin-top: 30px;">
   <div class="group-tap">
-  <a href="#" class="tap"><i class="fa fa-history fa-2x"></i></a> <!-- 만났던 사람들 히스토리 -->
-  <a href="#" class="tap"><i class="fa fa-users fa-2x"></i></a> <!-- 친구추가된 친구들 -->
-  <a href="#" class="tap"><i class="fa fa-hashtag fa-2x"></i></a> <!-- 관심사 바꾸기 -->
+  <a href="#" class="tap"><i class="material-icons">history</i></a> <!-- 만났던 사람들 히스토리 -->
+  <a href="#" class="tap"><i class="material-icons md-36">people</i></a> <!-- 친구추가된 친구들 -->
+  <a href="#" class="tap"><i class="material-icons">turned_in</i></a> <!-- 관심사 바꾸기 -->
   </div>
 </section>
 
 <section id="right-content">
   <header id="right-header">
     <span class="intersted-in">interested in #PORN</span>
-  </header>
+    <span class="right">
+    <img src="https://help.github.com/assets/images/help/profile/identicon.png">
+    <span>imkimchi</span></span>
+    </header>
     <div class="wrapper">
       <div id="messages"></div>
       <footer>
-        <div class="container" style="margin-left: 0px;">
+        <div class="container" style="margin-left: 0px; padding-left: 5px;">
           <form id="main">
-                <i class="fa fa-plus-square-o fa-2x"></i>
-                <input placeholder="Say Hi" id="content" type="text" autocomplete="off" >
-                <button type="button" class="btn btn-default">Send</button> <!-- Send를 Stop으로 바꾼다 -->
+                <i class="material-icons md-36">add</i>
+                <input type="text" autocomplete="off" id="content" placeholder="Say Hi" ><!-- Send를 Stop으로 바꾼다 -->
             </form>
         </div>
       </footer>

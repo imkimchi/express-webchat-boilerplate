@@ -1,0 +1,14 @@
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:900);
+
+#right-header {
+	height: 60px;
+	width: 100%;
+	position: fixed;
+	padding-left: 30px;
+	margin-top: 10px;
+	padding-bottom: 10px;
+	display: table-cell;
+	vertical-align: middle;
+	border-bottom: 1px solid #ddd;
+}

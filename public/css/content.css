@@ -1,3 +1,5 @@
+ * { box-sizing: border-box; }
+
 html, body {
 	margin: 0;
 	height: 100%;
@@ -9,10 +11,17 @@ body {
 	overflow-y: auto;
 }
 
+::selection {
+	background-color: #B2DFDB;
+}
 #messages {
 	height: 100%;
 	overflow: auto;
 	padding-left: 15px;
+}
+
+.material-icons {
+	font-size: 36px;
 }
 
 .logo {
@@ -52,6 +61,9 @@ footer {
 	display: inline-block;
 }
 
+#main {
+	width: 100$;
+}
 li{
 	list-style: none;
    }
@@ -59,14 +71,17 @@ li{
 
 .main {
 	display: inline-block;
+	width: 70%;
+	margin:4% 15%;
 	margin-bottom: 100px;
 }
+
 .fa-plus-square-o {
 	vertical-align: middle;
 }
 
 input[type=text]{
-	width:70%;
+	width: 70%;
 	height:34px;
 	position: relative;
 	padding:6px 12px;
@@ -90,6 +105,7 @@ input[type=text]{
 
 button {
 	display: inline-block;
+
 }
 
 #left-content {
@@ -112,3 +128,14 @@ button {
 	position: absolute;
 	right: 0;
 }
+
+i.material-icons.md-36 {
+    vertical-align: middle;
+}
+
+#right-header img {
+	width: 40px;
+	position: relative;
+	padding-bottom: 20px;
+}
+
