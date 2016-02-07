@@ -17,13 +17,40 @@
 <body>
 <section id="left-content">
   <img src="/public/logo.png" class="logo" style="margin-top: 30px;">
-  <div class="group-tap">
-  <a href="#" class="tap"><i class="material-icons">history</i></a> <!-- 만났던 사람들 히스토리 -->
-  <a href="#" class="tap"><i class="material-icons md-36">people</i></a> <!-- 친구추가된 친구들 -->
-  <a href="#" class="tap"><i class="material-icons">turned_in</i></a> <!-- 관심사 바꾸기 -->
+<div class="group-tap">
+    <a class="tap" href="#">
+      <i class="material-icons">history</i>
+    </a> <!-- 만났던 사람들 히스토리 -->
+    <a class="tap" href="#">
+      <i class="material-icons md-36">people</i>
+    </a> <!-- 친구추가된 친구들 -->
+    <a class="tap" href="#">
+      <i class="material-icons">turned_in</i>
+    </a> <!-- 관심사 바꾸기 -->
+</div>
+<div class="tap_content">
+  <div id="chat_history" style="margin-top: 20px;">
+    <div class="user_history">
+      <img src="http://www.arianagrande.com/files/2015/10/image006.jpg">
+      <div class="user_name">Ariana Grande</div>
+    </div>
+    <div class="user_history">
+      <img src="http://popcrush.com/files/2014/10/NickiMinaj1.jpg?w=630">
+      <div class="user_name">Nicki Minaj</div>
+    </div>
+    <div class="user_history">
+      <img src="http://i.imgur.com/AXSu8SV.png">
+      <div class="user_name">Taylor Swift</div>
+    </div>
+    <div class="user_history">
+      <img src="http://i.imgur.com/dPsGh5O.png">
+      <div class="user_name">MC moohyun</div>
+    </div>
   </div>
+  <div id="added_friend"></div>
+  <div id="intersting"></div>
+</div>
 </section>
-
 <section id="right-content">
   <header id="right-header">
     <span class="intersted-in">interested in #PORN</span>
@@ -44,8 +71,7 @@
     </div>  
 </section>
 
-<script src="/socket.io/socket.io.js">
-    </script> 
+    <script src="/socket.io/socket.io.js"></script> 
     <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="/public/js/chat.js"></script>
 </body>
