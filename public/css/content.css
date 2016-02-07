@@ -8,7 +8,7 @@ html, body {
 body {
 	position: relative;
 	overflow-x: hidden;
-	overflow-y: auto;
+	overflow-y: hidden;
 }
 
 ::selection {
@@ -73,14 +73,19 @@ li{
 	margin-top: 20px;
 }
 
+.tap_content {
+	width: 100%;
+}
 .group_tap {
 	width: 100%;
 }
 
-.tap_content {
+.content_wrapper {
 	width: 100%;
+	overflow: auto;
 }
-.tap_content img {
+.profile-pic {
+	float: left;
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
@@ -92,12 +97,19 @@ li{
 .user_name {
 	display: inline-block;
 	color: white;
-	font-weight: 300;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	padding-top: 5px;
 }
 
-.user_history{
+.time-ago, .status {
+	color: #80CBC4;
+}
+
+.article_box{
 	margin-top: 20px;
 }
+
 .group-tap {
 	padding-bottom: 55px;
 	border-bottom: 1px solid #006064;
@@ -129,10 +141,13 @@ input[type=text]{
 	border-radius:4px;
 	-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075);
 	box-shadow:inset 0 1px 1px rgba(0,0,0,.075);
-	-webkit-transition:border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;-o-transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s
+	-webkit-transition:border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+	-o-transition:border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s
 }
 
 .intersted-in {
+	float: left;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 900;
 	font-size: 3em;
@@ -177,3 +192,34 @@ i.material-icons.md-36 {
 	padding-bottom: 20px;
 }
 
+.add, .msg {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+
+.tap_content {
+	margin-top: 20px;
+}
+
+.collection {
+	float: left;
+	font-family: Raleway;
+	font-weight: 900;
+	font-size: 2em;
+}
+
+.article_box .material-icons {
+	display: table-cell;
+	vertical-align: middle;	
+	font-size: 24px;
+	float: right;
+	padding-top: 5px;
+	padding-right: 5px;
+}
+
+.right {
+	float: right;
+}

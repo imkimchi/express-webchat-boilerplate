@@ -18,45 +18,142 @@
 <section id="left-content">
   <img src="/public/logo.png" class="logo" style="margin-top: 30px;">
 <div class="group-tap">
-    <a class="tap" href="#">
-      <i class="material-icons">history</i>
-    </a> <!-- 만났던 사람들 히스토리 -->
-    <a class="tap" href="#">
-      <i class="material-icons md-36">people</i>
-    </a> <!-- 친구추가된 친구들 -->
-    <a class="tap" href="#">
-      <i class="material-icons">turned_in</i>
-    </a> <!-- 관심사 바꾸기 -->
+    <a class="tap history" href="#history">
+      <i class="material-icons">history</i></a> 
+    <a class="tap friend" href="#friend">
+      <i class="material-icons md-36">people</i></a>
+    <a class="tap interested" href="#interested">
+      <i class="material-icons">turned_in</i></a>
 </div>
-<div class="tap_content">
-  <div id="chat_history" style="margin-top: 20px;">
-    <div class="user_history">
-      <img src="http://www.arianagrande.com/files/2015/10/image006.jpg">
+<section class="content_wrapper">
+  <div class="chat_history tap_content">
+    <div class="article_box">
+      <div class="add">add</div>
+      <img class="profile-pic" src="http://www.arianagrande.com/files/2015/10/image006.jpg">
       <div class="user_name">Ariana Grande</div>
+      <div class="time-ago">5 minutes ago</div>
+      <div class="clear"></div>
     </div>
-    <div class="user_history">
-      <img src="http://popcrush.com/files/2014/10/NickiMinaj1.jpg?w=630">
+    <div class="article_box">
+      <img class="profile-pic" src="http://popcrush.com/files/2014/10/NickiMinaj1.jpg?w=630">
+      <div class="add">add</div>
       <div class="user_name">Nicki Minaj</div>
+      <div class="time-ago">4 minutes ago</div>
+      <div class="clear"></div>
     </div>
-    <div class="user_history">
-      <img src="http://i.imgur.com/AXSu8SV.png">
+    <div class="article_box">
+      <img class="profile-pic" src="http://i.imgur.com/AXSu8SV.png">
+      <div class="add">add</div>
       <div class="user_name">Taylor Swift</div>
+      <div class="time-ago">3 minutes ago</div>
+      <div class="clear"></div>
     </div>
-    <div class="user_history">
-      <img src="http://i.imgur.com/dPsGh5O.png">
-      <div class="user_name">MC moohyun</div>
+    <div class="article_box">
+      <div class="add">add</div>
+      <img class="profile-pic" src="http://goo.gl/cGIsJw">
+      <div class="user_name">Daya</div>
+      <div class="time-ago">2 minutes ago</div>
+      <div class="clear"></div>
+    </div>
+    <div class="article_box">
+      <div class="add">add</div>
+      <img class="profile-pic" src="http://goo.gl/kbGDZ0">
+      <div class="user_name">Jessie J</div>
+      <div class="time-ago">2 minutes ago</div>
+      <div class="clear"></div>
+    </div>
+    <div class="article_box">
+      <div class="add">add</div>
+      <img class="profile-pic" src="http://ecx.images-amazon.com/images/I/811DR6fJ8IL._SL1500_.jpg">
+      <div class="user_name">Katy Perry</div>
+      <div class="time-ago">2 minutes ago</div>
+      <div class="clear"></div>
+    </div>
+    <div class="article_box">
+      <div class="add">add</div>
+      <img class="profile-pic" src="http://cdn-media.toofab.com/2016/01/04/0104-selena-main-300x250.jpg">
+      <div class="user_name">Selena Gomez</div>
+      <div class="time-ago">2 minutes ago</div>
+      <div class="clear"></div>
     </div>
   </div>
-  <div id="added_friend"></div>
-  <div id="intersting"></div>
-</div>
+  </section>
+  <section class="content_wrapper">
+  <div class="added_friend tap_content">
+    <div class="article_box">
+      <div class="msg">msg</div>
+      <img class="profile-pic" src="http://i.imgur.com/gPx2k1e.png">
+      <div class="user_name">love west coast girls</div>
+      <div class="status">Online</div>
+      <div class="clear"></div>
+    </div>
+    <div class="article_box">
+      <div class="msg">msg</div>
+      <img class="profile-pic" src="http://i.imgur.com/eAB5i9O.png">
+      <div class="user_name">I like people</div>
+      <div class="status">Online</div>
+      <div class="clear"></div>
+    </div>
+    <div class="article_box">
+      <div class="msg">msg</div>
+      <img class="profile-pic" src="http://i.imgur.com/up9Hkms.png">
+      <div class="user_name">gaylover</div>
+      <div class="status">Online</div>
+      <div class="clear"></div>
+    </div>
+    <div class="article_box">
+      <div class="msg">msg</div>
+      <img class="profile-pic" src="http://i.imgur.com/L7KXmRm.png">
+      <div class="user_name">su-nim</div>
+      <div class="status">Offline</div>
+      <div class="clear"></div>
+    </div>
+    <div class="article_box">
+      <div class="msg">msg</div>
+      <img class="profile-pic" src="http://i.imgur.com/xaYXyIg.jpg">
+      <div class="user_name">Muhammad</div>
+      <div class="status">Offline</div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  </section>
+  <section class="content_wrapper">
+  <div class="intersting tap_content">
+    <div class="article_box">
+        <i class="material-icons">delete</i>
+        <i class="material-icons">create</i>
+        <div class="collection">#porn</div>
+        <div class="clear"></div>
+    </div>
+    <div class="article_box">
+        <i class="material-icons">delete</i>
+        <i class="material-icons">create</i>
+        <div class="collection">#japan_av</div>
+        <div class="clear"></div>
+    </div>
+    <div class="article_box">
+        <i class="material-icons">delete</i>
+        <i class="material-icons">create</i>
+        <div class="collection">#camgirls</div>
+        <div class="clear"></div>
+    </div>
+    <div class="article_box">
+        <i class="material-icons">delete</i>
+        <i class="material-icons">create</i>
+        <div class="collection">#mating</div>
+        <div class="clear"></div> 
+    </div>
+  </div>
+  </section>
 </section>
 <section id="right-content">
   <header id="right-header">
     <span class="intersted-in">interested in #PORN</span>
-    <span class="right">
+    <div class="right">
     <img src="https://help.github.com/assets/images/help/profile/identicon.png">
-    <span>imkimchi</span></span>
+    <div class="stranger_name">imkimchi</div>
+    </div>
+    <div class="clear"></div>
     </header>
     <div class="wrapper">
       <div id="messages"></div>
@@ -74,5 +171,6 @@
     <script src="/socket.io/socket.io.js"></script> 
     <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="/public/js/chat.js"></script>
+    <script src="/public/js/common.js"></script>
 </body>
 </html>
