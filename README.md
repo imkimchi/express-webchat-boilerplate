@@ -1,4 +1,4 @@
-# :speech_balloon:Evian
+#Evian
 
 Evian helps you connect users who share the same interests
 
