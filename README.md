@@ -1,5 +1,9 @@
-# Evian
-### A web chat applicaton bulit with Node.js(socket.io) + mongoDB
+#Evian
+
+Evian helps you connect users who share the same interests
 
 
-It helps you connect users who share the same interests
+##Also you can do this stuff
+
+:couple_with_heart::kiss::airplane::wc: ...
+ :smirk:
