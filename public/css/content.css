@@ -69,8 +69,11 @@ li{
 	list-style: none;
 }
 
-.chat_history {
-	margin-top: 20px;
+.tap_content {
+	height: 560px;
+	padding-left: 10px;
+	padding-right: 10px;
+	overflow: auto;
 }
 
 .tap_content {
@@ -82,7 +85,6 @@ li{
 
 .content_wrapper {
 	width: 100%;
-	overflow: auto;
 }
 .profile-pic {
 	float: left;
@@ -198,10 +200,6 @@ i.material-icons.md-36 {
 
 .clear {
 	clear: both;
-}
-
-.tap_content {
-	margin-top: 20px;
 }
 
 .collection {
