@@ -43,8 +43,8 @@ body {
     text-align: center;
     text-decoration: none;
     line-height: 45px;
-    -webkit-transition: all 0.2s;
-    transition: all 0.2s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
 }
 
 .tap:hover {
