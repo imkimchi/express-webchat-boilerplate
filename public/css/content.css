@@ -104,6 +104,14 @@ li{
 	padding-top: 5px;
 }
 
+.user_name_chat {
+	display: inline-block;
+	font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+	font-weight: 500;
+	padding-top: 5px;
+	font-weight: bold;
+}
+
 .time-ago, .status {
 	color: #80CBC4;
 }
@@ -220,4 +228,12 @@ i.material-icons.md-36 {
 
 .right {
 	float: right;
+}
+
+.text {
+	font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+}
+
+.msg_box {
+	margin-top: 20px;
 }
