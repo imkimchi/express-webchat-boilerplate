@@ -1,6 +1,6 @@
 #Evian
 
-Evian helps you connect users who share the same interests
+Get started with users who share the same interests on Evian
 
 
 ##Also you can do this stuff
