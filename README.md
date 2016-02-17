@@ -1,6 +1,6 @@
 #Evian
 
-Get started with users who share the same interests on Evian
+Get started with users who share the same interests !
 
 
 ##Also you can do this stuff
